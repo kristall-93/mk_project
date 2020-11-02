@@ -3,13 +3,994 @@
 @import "_fonts";
 
 // start homepage
+
 // start header
 
-// .header {
-//     padding-bottom: 190px;
+.header {
+    background-color: #fff;
+    &-top {
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            margin-right: -26px;
+        }
+    }
+    &__link {
+        &-veiw {
+            margin-right: 196px;
+        }
+        &-tel {
+            font-family: Commissioner;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.03em;
+            color: rgba(0, 0, 0, 0.5);
+            margin-right: 15px;
+        }
+        &-a {
+            margin-right: 13px;
+        }
+        &-call {
+            margin-right: 12px;
+        }
+        &-whatsup {
+            margin-right: 14px;
+        }
+    }
+    &-bottom {
+        &__inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 0 22px;
+        }
+    }
+}
+.language {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-right: auto;
+    &__label {
+        font-weight: 300;
+        margin-right: 13px;
+    }
+    &__select {
+        font-weight: 400;
+        &::after {
+            content: url(../images/arrow-down.svg);
+            margin-left: 8px;
+        }
+    }
+}
+.logo {
+    margin-right: auto;
+}
+.menu {
+    font-family: "Commissioner", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.75);
+    &__list {
+        li {
+            display: inline-block;
+            & + li {
+                margin-left: 50px;
+            }
+        }
+    }
+    &__item {
+        &--search {
+            height: 18px;
+            width: 18px;
+            background-image: url(../images/icon-search.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+
+// end header
+
+// start banner
+
+.banner {
+    &-slider {
+        position: relative;
+        &__item {
+            // width: 100%;
+            height: 650px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        &__title {
+            max-width: 500px;
+            font-family: "Commissioner", sans-serif;
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 50px;
+            letter-spacing: 0.01em;
+            color: rgba(0, 0, 0, 0.9);
+            margin-top: 160px;
+            margin-bottom: 20px;
+        }
+        &__text {
+            max-width: 500px;
+            font-size: 15px;
+            line-height: 25px;
+            color: rgba(0, 0, 0, 0.8);
+            margin-bottom: 50px;
+        }
+        // &__link {
+        // }
+        .slick-arrow {
+            position: absolute;
+            bottom: 121px;
+            left: 50%;
+            background: transparent;
+            border: none;
+            z-index: 1;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        .banner-slider__next {
+            transform: translate(-500px);
+        }
+        .banner-slider__prev {
+            transform: translate(-560px);
+            img {
+                transform: scaleX(-1);
+            }
+        }
+    }
+}
+
+.yellow-link {
+    width: 200px;
+    height: 45px;
+    text-align: center;
+    padding: 7px;
+    background: #dec377;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 30px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+// end banner
+
+// start advantages
+
+.advantages {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-90px);
+        margin-bottom: 10px;
+    }
+    &__item {
+        min-height: 285px;
+        padding: 50px 20px 40px;
+        max-width: 270px;
+        width: 100%;
+        background: #ffffff;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+        text-align: center;
+    }
+    &__img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 3px solid rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 25px;
+        // img {
+        // }
+    }
+    &__text {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0.02em;
+        color: rgba(0, 0, 0, 0.75);
+    }
+}
+
+// end advantages
+
+// start article
+
+.article {
+    &__inner {
+        background-color: #fff;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    &__content {
+        max-width: 670px;
+        width: 100%;
+        padding: 50px 60px 60px 70px;
+    }
+    &__title {
+        font-family: "Commissioner", sans-serif;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 0.03em;
+        color: rgba(0, 0, 0, 0.9);
+        margin-bottom: 30px;
+    }
+    &__text {
+        font-size: 15px;
+        line-height: 25px;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    &__img {
+        max-width: 500px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+// end article
+
+// start activities
+
+.activities {
+    margin-bottom: 60px;
+    &__title {
+        font-family: "Commissioner", sans-serif;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 0.03em;
+        color: rgba(0, 0, 0, 0.9);
+        margin-bottom: 35px;
+    }
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        max-width: 370px;
+        width: 32%;
+        display: flex;
+        justify-content: space-between;
+        background: #ffffff;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        padding: 15px 15px 25px 40px;
+        margin-bottom: 30px;
+        &-box {
+            margin-top: 10px;
+            max-width: 180px;
+            min-height: 90px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-right: 20px;
+        }
+        &-title {
+            font-family: "Commissioner", sans-serif;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            color: rgba(0, 0, 0, 0.9);
+        }
+        &-more {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.5);
+        }
+        &-img {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            // img {
+            // }
+        }
+    }
+    &__all-services {
+        margin-top: 10px;
+        margin-bottom: 100px;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        .activities__title {
+            max-width: 370px;
+            margin-right: 30px;
+        }
+    }
+    &__text {
+        max-width: 770px;
+        font-size: 15px;
+        line-height: 25px;
+        color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+// end activities
+
+// start main-slider
+
+// .main-slider {
 // }
+.slider {
+    margin-bottom: -110px;
+    position: relative;
+    &__item {
+        min-height: 560px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        z-index: 1;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    .slider__next {
+        right: -60px;
+    }
+    .slider__prev {
+        left: -60px;
+        img {
+            transform: scaleX(-1);
+        }
+    }
+}
 
-//end 
+// end  main-slider
 
+// start partners
+
+.partners {
+    padding-top: 110px;
+    padding-bottom: 100px;
+    background: #ffffff;
+    &__title {
+        font-family: "Commissioner", sans-serif;
+        margin-top: 100px;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 0.03em;
+        color: rgba(0, 0, 0, 0.9);
+        margin-bottom: 35px;
+    }
+    &__slider {
+        position: relative;
+        .slick-slide {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+            margin: 0 15px 30px;
+        }
+        .slick-list {
+            margin: 0 -15px;
+        }
+        .slick-arrow {
+            position: absolute;
+            bottom: -29px;
+            right: 20px;
+            background: transparent;
+            border: none;
+            z-index: 1;
+            width: 10px;
+            height: 18px;
+            img {
+                width: 100%;
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        .partners__prev {
+            transform: translateX(-60px);
+            img {
+                transform: scaleX(-1);
+            }
+        }
+        .slick-dots {
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            li {
+                display: inline-block;
+                & + li {
+                    margin-left: 10px;
+                }
+                &.slick-active {
+                    button {
+                        background: #dec377;
+                    }
+                }
+            }
+            button {
+                color: transparent;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: none;
+                background: rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+    &__item {
+        &-img {
+            height: 100px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        &-inner {
+            padding: 40px 50px 60px;
+        }
+        &-position {
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 25px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+        &-name {
+            font-family: "Commissioner", sans-serif;
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 40px;
+            letter-spacing: 0.01em;
+            color: #dec377;
+            margin-bottom: 20px;
+        }
+        &-text {
+            font-size: 14px;
+            line-height: 25px;
+            letter-spacing: 0.01em;
+            color: rgba(0, 0, 0, 0.8);
+            margin-bottom: 25px;
+        }
+        &-more {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+    &__all-reviews {
+        margin-bottom: 105px;
+    }
+    &__box {
+        display: flex;
+        padding-bottom: 40px;
+    }
+    &__text {
+        max-width: 670px;
+        font-size: 15px;
+        line-height: 25px;
+        color: rgba(0, 0, 0, 0.8);
+        margin-right: 100px;
+    }
+    &__all-link {
+        width: 200px;
+        height: 45px;
+        font-family: "Commissioner", sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 30px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #dec377;
+        text-align: center;
+        border: 2px solid #dec377;
+        padding: 6px;
+    }
+    &__line {
+        padding: 0 21px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        filter: grayscale(100%);
+        transition: all 0.3s;
+        cursor: pointer;
+        &:hover {
+            filter: none;
+        }
+    }
+}
+
+// end partners
+
+// start features
+
+.features {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        background-color: #fff;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        position: relative;
+        &--label::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: 35px solid transparent;
+            border-top: 35px solid #dec377;
+            border-right: 35px solid #dec377;
+        }
+        &--short {
+            max-width: 570px;
+            padding: 40px 50px 50px;
+            margin-bottom: 30px;
+            & + .features__item--short {
+                margin-left: 30px;
+            }
+        }
+        &--long {
+            padding: 40px 50px 45px;
+            display: flex;
+            justify-content: space-between;
+            .features__item-title {
+                max-width: 250px;
+                margin-right: 30px;
+            }
+            .features__item-text {
+                max-width: 720px;
+            }
+        }
+        &-title {
+            font-family: "Commissioner", sans-serif;
+            font-weight: normal;
+            font-size: 26px;
+            line-height: 45px;
+            color: rgba(0, 0, 0, 0.9);
+        }
+        &-text {
+            font-size: 15px;
+            line-height: 25px;
+            color: rgba(0, 0, 0, 0.8);
+        }
+    }
+}
+
+// start features
+
+// start placeholder
+
+.placeholder {
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+// end placeholder
+
+// start services
+
+.services {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    &__title {
+        font-family: "Commissioner", sans-serif;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 0.03em;
+        color: rgba(0, 0, 0, 0.9);
+        margin-bottom: 35px;
+    }
+    &__inner {
+        margin-bottom: 20px;
+    }
+    &__line {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 100%;
+        height: 140px;
+        padding: 25px 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #fff;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        margin-bottom: 30px;
+        & + .services__item {
+            margin-left: 30px;
+        }
+        &-name {
+            font-family: "Commissioner", sans-serif;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            color: rgba(0, 0, 0, 0.9);
+        }
+        &-link {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.5);
+            text-align: right;
+        }
+        &.ligth-border {
+            border-left: 70px solid rgba(222, 195, 119, 0.4);
+        }
+        &.medium-border {
+            border-left: 70px solid rgba(222, 195, 119, 0.75);
+        }
+        &.dark-border {
+            border-left: 70px solid #dec377;
+        }
+        &--small {
+            max-width: 470px;
+        }
+        &--long {
+            max-width: 670px;
+        }
+        &--medium {
+            max-width: 570px;
+        }
+    }
+    &__all {
+        display: flex;
+        justify-content: space-between;
+        &-text {
+            max-width: 770px;
+            width: 100%;
+            font-size: 15px;
+            line-height: 25px;
+            color: rgba(0, 0, 0, 0.8);
+        }
+    }
+}
+
+// end services
+
+// start trust
+
+.trust {
+    background-color: #fff;
+    &__inner {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    &__line {
+        padding: 60px 0 35px;
+        display: flex;
+        justify-content: space-between;
+        & + .trust__line {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+    }
+    &__left {
+        max-width: 470px;
+        width: 100%;
+        margin-right: 30px;
+    }
+    &__title {
+        font-family: "Commissioner", sans-serif;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 0.03em;
+        color: rgba(0, 0, 0, 0.9);
+        margin-bottom: 30px;
+    }
+    &__text {
+        font-size: 15px;
+        line-height: 25px;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    &__list {
+        max-width: 440px;
+        width: 100%;
+    }
+    &__item {
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        &-text {
+            // font-weight: 600;
+            font-size: 17px;
+            line-height: 30px;
+            letter-spacing: 0.01em;
+            color: rgba(0, 0, 0, 0.75);
+        }
+    }
+    &__dot {
+        width: 10px;
+        height: 10px;
+        background: #dec377;
+        border-radius: 50%;
+        &-wrapper {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(222, 195, 119, 0.4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 30px;
+        }
+    }
+}
+
+// end trust
+
+// start our-advantages
+
+.our-advantages {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    &__title {
+        font-family: "Commissioner", sans-serif;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 0.03em;
+        color: rgba(0, 0, 0, 0.9);
+        margin-bottom: 35px;
+    }
+    .advantages__inner {
+        transform: translateY(0);
+        margin-bottom: 40px;
+    }
+    .advantages__item {
+        padding: 50px 20px 40px;
+        min-height: 335px;
+    }
+    .features__item {
+        .features__item-text {
+            max-width: 750px;
+        }
+    }
+}
+
+// end our-advantages
+
+// start cooperation
+
+.cooperation {
+    padding-bottom: 100px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        max-width: 500px;
+        width: 100%;
+        margin-right: 50px;
+    }
+    &__title {
+        font-family: "Commissioner", sans-serif;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 0.03em;
+        color: rgba(0, 0, 0, 0.9);
+        margin-bottom: 38px;
+    }
+    &__step {
+        display: flex;
+        align-items: center;
+        margin-bottom: 35px;
+        &-number {
+            font-family: "Commissioner", sans-serif;
+            font-weight: 800;
+            font-size: 22px;
+            line-height: 67px;
+            color: #dec377;
+            width: 70px;
+            min-width: 70px;
+            height: 70px;
+            border: 1px solid rgba(222, 195, 119, 0.75);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 30px;
+        }
+        &-text {
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 25px;
+            color: rgba(0, 0, 0, 0.8);
+        }
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 25px;
+        letter-spacing: 0.01em;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    &__form {
+        max-width: 570px;
+        width: 100%;
+        padding: 40px 50px 50px;
+        background: #ffffff;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 3px;
+        &-label {
+            margin-bottom: 10px;
+            display: block;
+            font-family: "Commissioner", sans-serif;
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: 0.01em;
+            color: rgba(0, 0, 0, 0.5);
+        }
+        &-input {
+            width: 100%;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 25px;
+            color: rgba(0, 0, 0, 0.5);
+            padding: 4px 8px;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            &::placeholder {
+                opacity: 0.6;
+            }
+        }
+        &-text {
+            font-size: 13px;
+            line-height: 20px;
+            color: rgba(0, 0, 0, 0.5);
+            margin-bottom: 30px;
+            a {
+                font-weight: 700;
+                line-height: 17px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+                // text-decoration: underline;
+            }
+        }
+        &-btn {
+            width: 100%;
+            border: none;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+// end cooperation
+
+// start price
+
+.price {
+    padding-bottom: 100px;
+    &__title {
+        font-family: "Commissioner", sans-serif;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 0.03em;
+        color: rgba(0, 0, 0, 0.9);
+        margin-bottom: 30px;
+    }
+    &__text {
+        font-size: 15px;
+        line-height: 25px;
+        color: rgba(0, 0, 0, 0.8);
+        margin-bottom: 30px;
+    }
+}
+
+// end price
+
+// start footer
+
+.footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    &__inner {
+        padding-top: 50px;
+        padding-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        max-width: 255px;
+        width: 100%;
+        &-item {
+            margin-bottom: 10px;
+            color: rgba(0, 0, 0, 0.5);
+            span {
+                font-family: "Commissioner", sans-serif;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 20px;
+                letter-spacing: 0.01em;
+                color: rgba(0, 0, 0, 0.5);
+                margin-right: 15px;
+            }
+        }
+    }
+    &__title {
+        font-family: "Commissioner", sans-serif;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        color: rgba(0, 0, 0, 0.9);
+        margin-bottom: 70px;
+    }
+    &__social {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li {
+            display: inline-block;
+            & + li {
+                margin-left: 18px;
+            }
+        }
+    }
+    &__right{
+        display: flex;
+        justify-content: space-between;
+        &-col{
+            max-width: 200px;
+            width: 100%;
+            &.footer__right-col--wide{
+                max-width: 640px;
+            }
+        }
+        &-inner{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+// end footer
 
 @import "_media";

@@ -20,6 +20,9 @@ a {
     display: inline-block;
     transition: all .3s;
     cursor: pointer;
+    &:hover{
+        opacity: .7;
+    }
 }
 
 ul,
@@ -55,16 +58,16 @@ button {
 }
 
 body {
-    // font-family: "Gilroy", sans-serif;
-    // font-size: 16px;
-    // line-height: 26px;
-    // font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    // font-family: 'Commissioner', sans-serif;
+    font-weight: 300;
     min-width: 320px;
+    background: #E5E5E5;
 }
 
 .container {
-    // max-width: 1000px;
-    padding: 0 30px;
+    max-width: 1200px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
